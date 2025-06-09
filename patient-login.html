@@ -18,32 +18,11 @@
         <label for="password">Adgangskode:</label>
         <input type="password" id="password" name="password">
 
-        <!-- Når du klikker, vises næste knap -->
-        <button type="button" onclick="handleLogin()">Log ind</button>
+        <!-- Ændret knap: åbner patient-menu.html i ny fane -->
+        <button type="button" onclick="window.open('patient-menu.html', '_blank')">Log ind</button>
     </form>
 
-    <!-- Vises først efter login -->
-    <div class="patient-actions">
-        <button onclick="togglePatientDropdown()" class="dropbtn">Vælg handling</button>
-        <div id="patient-dropdown" class="dropdown-content">
-            <a href="upload-billede.html" target="_blank">Vedlæg billede</a>
-            <a href="sporgeskema.html" target="_blank">Udfyld spørgeskema</a>
-            <a href="feedback.html" target="_blank">Se feedback</a>
-        </div>
-    </div>
-
 </div>
-
-<!-- JavaScript -->
-<script>
-    function handleLogin() {
-        document.querySelector(".patient-actions").style.display = "block";
-    }
-
-    function togglePatientDropdown() {
-        document.getElementById("patient-dropdown").classList.toggle("show");
-    }
-</script>
 
 </body>
 </html>

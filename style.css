@@ -91,7 +91,6 @@ body {
     margin-top: 50px;
 }
 
-
 h1 {
     font-size: 28px;
     font-weight: bold;
@@ -108,21 +107,22 @@ h1 {
     max-width: 400px;
     box-sizing: border-box;
     margin: 0 auto;
+    text-align: center;
 }
 
-form h2 {
+.login-container h2 {
     text-align: center;
     color: #0077cc;
 }
 
-form label {
+.login-container label {
     display: block;
     margin-top: 20px;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-form input {
+.login-container input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -131,7 +131,7 @@ form input {
     box-sizing: border-box;
 }
 
-form button {
+.login-container button {
     width: 100%;
     padding: 12px;
     background-color: #0077cc;
@@ -142,7 +142,7 @@ form button {
     font-size: 16px;
 }
 
-form button:hover {
+.login-container button:hover {
     background-color: #005fa3;
 }
 
